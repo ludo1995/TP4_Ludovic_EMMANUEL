@@ -1,0 +1,75 @@
+Exercie 1:
+
+1) configuration de git
+2) le repertoire .git a ete cree.
+4) ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git status
+Sur la branche master
+
+Validation initiale
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	exo1/
+	git.txt
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+
+les fichiers presents dans exo1 et le fichier git.txt sont presents uniquement localement.
+
+5) ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git add exo1/ex1.txt 
+ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git status 
+Sur la branche master
+
+Validation initiale
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+
+	nouveau fichier : exo1/ex1.txt
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+
+	git.txt
+
+on voit que le fichier que j'ai ajoute est suivi.
+
+7) ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git status
+Sur la branche master
+rien à valider, la copie de travail est propre
+
+
+8) ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git log -p
+commit 3bacdc913d818b706eb57dedc24437bb0865bbbf
+Author: ludo1995 <ludovic.emmanuel1995@gmail.com>
+Date:   Thu Jan 12 09:55:03 2017 +0100
+
+    Un super message
+
+diff --git a/exo1/ex1.txt b/exo1/ex1.txt
+new file mode 100644
+index 0000000..e69de29
+
+il s'agit de l'historique de validations.
+
+9)ludo@debian-ludo:~/Documents/EI-SE3/opi/tp4$ git diff
+diff --git a/exo1/ex1.txt b/exo1/ex1.txt
+index e69de29..28d0af9 100644
+--- a/exo1/ex1.txt
++++ b/exo1/ex1.txt
+@@ -0,0 +1 @@
++coucou
+
+git diff permet de savoir si un fichier a ete modifie.
+
+11) on retrouve le dossier et ses fichiers.
+
+12) on voit que le fichier a ete modifie sur github.
+
+Exercice 2:
+
+2) dossier PremierPas a ete cree.
+lors du push il faut d'abord faire un pull afin d'etre a jour.
+
+

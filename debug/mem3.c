@@ -14,5 +14,6 @@ int main(void)
 
   for( i = 0 ; i < size ; i++)
     free(p[i]);
+   free(p); //4 eme free pour ne pas avoir de fuite
   return EXIT_SUCCESS;     
 }
