@@ -1,4 +1,4 @@
-CC = gcc
+#CC = gcc
 CFLAGS = -O3 -Wall -funroll-loops -s
 LDLIBS = -lpng
 PROGRAMS = pbm2png pbm2eps9
